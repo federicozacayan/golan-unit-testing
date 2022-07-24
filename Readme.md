@@ -1,4 +1,12 @@
-# Teting (windows instructions)
+# To run all testing (windows instructions)
+
+Run all test by using all tags
+
+```
+clear ; go test .\...  -v --tags "unit integration" -cover
+```
+
+## Testing by tags
 
 To run test gouped by TAGS. 
 
@@ -14,23 +22,6 @@ clear ; go test .\... -v --tags=integration -cover
 ```
 
 
-## To run all testing
-
-Delete from `math1\calculator_test.go`
-```
-//go:build unit
-// +build unit
-```
-
-And delete from `math1\calculator_integration_test.go` also.
-```
-//go:build integration
-// +build integration
-```
-
-```BASH
-clear ; go test .\... -v -cover
-```
 
 
 ### More references
